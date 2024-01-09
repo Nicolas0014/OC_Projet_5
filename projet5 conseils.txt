@@ -1,0 +1,18 @@
+Outil de dev :
+
+- LightHouse : Analyse détaillée performance et SEO
+
+A faire plutot en navigation privée pour ne pas prendre
+en compte les plug-ins lors de l'analyse (altère les performances).
+
+- LazyLoading : chargement dynamique des images : attribut sur la 
+balise img.
+
+-> A mettre sur les images dont on sait qu'elles ne seront pas
+visibles de prime abord (pour éviter des légères latences sur une 
+image).
+
+- Passer les images en webp (format le mieux compressé du web).
+
+- Balises pictures et balises sources à l'intérieur
+(affichage en fonction de la taille d'écran)
