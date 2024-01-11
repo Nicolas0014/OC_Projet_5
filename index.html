@@ -4,8 +4,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<meta charset="UTF-8">
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -35,13 +33,28 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100" alt="photo mode paris">
+				<picture>
+					<source srcset="./assets/images/slider/ryoji-iwata-mobile.webp" media="(max-width:600px)">
+					<source srcset="./assets/images/slider/ryoji-iwata-tablet.webp" media="(min-width:600px) and (max-width:900px)">
+					<source srcset="./assets/images/slider/ryoji-iwata-laptop.webp" media="(min-width:900px) and (max-width:1200px)">
+					<img src="./assets/images/slider/ryoji-iwata-desktop.webp" class="d-block w-100" alt="photo slider mode">
+				</picture>
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100" alt="photo concert paris">
+				<picture>
+					<source srcset="./assets/images/slider/nicholas-green-mobile.webp" media="(max-width:600px)">
+					<source srcset="./assets/images/slider/nicholas-green-tablet.webp" media="(min-width:600px) and (max-width:900px)">
+					<source srcset="./assets/images/slider/nicholas-green-laptop.webp" media="(min-width:900px) and (max-width:1200px)">
+					<img src="./assets/images/slider/nicholas-green-desktop.webp" loading="lazy" class="d-block w-100" alt="photo slider concert">
+				</picture>
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/edward-cisneros.webp" class="d-block w-100" alt="photo mariage paris">
+				<picture>
+					<source srcset="./assets/images/slider/edward-cisneros-mobile.webp" media="(max-width:600px)">
+					<source srcset="./assets/images/slider/edward-cisneros-tablet.webp" media="(min-width:600px) and (max-width:900px)">
+					<source srcset="./assets/images/slider/edward-cisneros-laptop.webp" media="(min-width:900px) and (max-width:1200px)">
+					<img src="./assets/images/slider/edward-cisneros-desktop.webp" loading="lazy" class="d-block w-100" alt="photo slider mariage">
+				</picture>
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -69,15 +82,15 @@
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul.webp" alt="photo concert aaron paul"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou.webp" alt="photo portrait entreprise"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman.webp" alt="photo meeting entreprise"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing.webp" alt="photo mariage"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji.webp" alt="photo portrait homme"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens.webp" alt="photo couple mariage"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg.webp" alt="photo portrait femme"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill.webp" alt="photo concert austin neill"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe.webp" alt="photo marketing entreprise"/>
+			<img data-gallery-tag="Concert" class="gallery-item" loading="lazy" src="./assets/images/gallery/concerts/aaron-paul.webp" alt="photo concert aaron paul"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy" src="./assets/images/gallery/entreprise/ali-morshedlou.webp" alt="photo portrait entreprise"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy"src="./assets/images/gallery/entreprise/jason-goodman.webp" alt="photo meeting entreprise"/>
+			<img data-gallery-tag="Mariages" class="gallery-item" loading="lazy" src="./assets/images/gallery/mariage/hannah-busing.webp" alt="photo mariage"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" loading="lazy" src="./assets/images/gallery/portraits/ade-tunji.webp" alt="photo portrait homme"/>
+			<img data-gallery-tag="Mariages" class="gallery-item" loading="lazy" src="./assets/images/gallery/mariage/jakob-owens.webp" alt="photo couple mariage"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" loading="lazy" src="./assets/images/gallery/portraits/nino-van-prattenburg.webp" alt="photo portrait femme"/>
+			<img data-gallery-tag="Concert" class="gallery-item" loading="lazy" src="./assets/images/gallery/concerts/austin-neill.webp" alt="photo concert austin neill"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy" src="./assets/images/gallery/entreprise/mateus-campos-felipe.webp" alt="photo marketing entreprise"/>
 		</div>
 	</div>
 	<div class="quote">
@@ -149,7 +162,7 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.webp" alt="camera">
+			<img src="./assets/images/camera.webp" loading="lazy" alt="camera">
 		</div>
 	</div>
 </div>
