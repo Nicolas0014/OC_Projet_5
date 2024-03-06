@@ -203,6 +203,27 @@ body {
 #contact .container {
 	display: flex;
 }
+
+.container-2 {
+	font-family: Arial, sans-serif;
+	padding: 20px;
+	max-width: 1320px;
+	margin: 20px auto;
+	border-radius: 5px;
+}
+
+.container-2 [itemprop="streetAddress"],
+.container-2 [itemprop="addressLocality"],
+.container-2 [itemprop="postalCode"] {
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+.container-2 [itemprop="telephone"],
+.container-2 [itemprop="openingHours"] {
+	margin-top: 10px;
+}
+  
 .picture.right::before {
 	content: ' ';
 	background-color: #BEB45A;

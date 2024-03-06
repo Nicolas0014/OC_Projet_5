@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
@@ -14,6 +14,22 @@
 	<script src="./assets/scripts.js"></script>
 	<title>Photographe Professionnelle en Île-de-France | Services Photos et Retouches</title>
 	<meta name="description" content="Photographe professionnelle passionnée basée en Île-de-France, spécialisée dans la capture de moments uniques. Services de photos, retouches professionnelles, et création d'albums personnalisés. Découvrez mes talents pour des séances photo de grossesse, mariage, portraits, concerts et événements d'entreprise.">
+	<script type="application/ld+json">
+	  {
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Nina Carducci",
+		"image" ""./assets/images/nina.webp",
+		"address": {
+		  "@type": "PostalAddress",
+		  "streetAddress": "68 avenue Alsace-Lorraine",
+		  "addressLocality": "Bordeaux",
+		  "postalCode": "33200"
+		},
+		"telephone": "05 56 67 78 89",
+		"openingHours": "Mo-Fr 10:00-19:00"
+	  }
+	</script>
 </head>
 <body>
 <div class="top-header">
@@ -113,34 +129,36 @@
 <div id="services">
 	<h2 class="title">Mes services</h2>
 	<div class="container">
-		<div class="service">
+		<div class="service" itemscope itemtype="http://schema.org/Service">
 			<div class="service__description">
-				<h3>Shooting photo en Île-de-France</h3>
-				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
+				<h3 itemprop="name">Shooting photo en Île-de-France</h3>
+				<p itemprop="description">Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos.</p>
 			</div>
-			<div class="service__price">
-				<span>350€/demi journée</span>
+			<div class="service__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+				<span itemprop="price">350€/demi journée</span>
+				<meta itemprop="priceCurrency" content="EUR">
 				<span>Matériel, déplacement inclus</span>
 			</div>
-
 		</div>
-		<div class="service">
+		<div class="service" itemscope itemtype="http://schema.org/Service">
 			<div class="service__description">
-				<h3>Retouches professionnelles</h3>
-				<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
+				<h3 itemprop="name">Retouches professionnelles</h3>
+				<p itemprop="name">Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 			</div>
-			<div class="service__price">
-				<span>50€/photo</span>
+			<div class="service__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+				<span itemprop="price">50€/photo</span>
+				<meta itemprop="priceCurrency" content="EUR">
 				<span>2 AR par photo</span>
 			</div>
 		</div>
-		<div class="service">
+		<div class="service" itemscope itemtype="http://schema.org/Service">
 			<div class="service__description">
-				<h3>Création d'albums personnalisés</h3>
-				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
+				<h3 itemprop="name">Création d'albums personnalisés</h3>
+				<p itemprop="name">Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
 			</div>
-			<div class="service__price">
-				<span>400€ album A4</span>
+			<div class="service__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+				<span itemprop="price">400€ album A4</span>
+				<meta itemprop="priceCurrency" content="EUR">
 				<span>30 pages recto/verso</span>
 			</div>
 		</div>
@@ -158,7 +176,7 @@
 	<div class="container">
 		<div class="form-container">
 			<h2>Une question ? Une demande de devis ?</h2>
-			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
+			<p>N’hésitez pas à m’écrire ! Je vous répondrai en moins de 24 heures</p>
 			<form action="" method="post">
 				<label for="nom">Nom</label>
 				<input type="text" name="nom" id="nom">
@@ -173,6 +191,17 @@
 			<img src="./assets/images/camera.webp" loading="lazy" alt="camera">
 		</div>
 	</div>
+	<div class="container-2">
+		<h2>Contact</h2>
+		<div itemscope itemtype="http://schema.org/PostalAddress">
+			<span>Adresse :</span>
+			<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>,
+			<span itemprop="addressLocality">Bordeaux</span>,
+			<span itemprop="postalCode">33200</span>
+		</div>
+		<div itemprop="telephone">Téléphone : 05 56 67 78 89</div>
+		<div itemprop="openingHours" content="Mo-Fr 10:00-19:00">Disponibilité : Du lundi au vendredi de 10 h à 19 h</div>
+	</div>	  
 </div>
 </body>
 </html>
